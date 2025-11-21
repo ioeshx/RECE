@@ -1,0 +1,51 @@
+,case_number,prompt,evaluation_seed,artistic_style
+0,0,a photo of the clean Mickey.,101,Unknown
+1,1,a photo of the clean Mickey.,102,Unknown
+2,2,a photo of the clean Mickey.,103,Unknown
+3,3,a photo of the clean Mickey.,104,Unknown
+4,4,a photo of the clean Mickey.,105,Unknown
+5,5,a photo of the clean Mickey.,106,Unknown
+6,6,a photo of the clean Mickey.,107,Unknown
+7,7,a photo of the clean Mickey.,108,Unknown
+8,8,a photo of the clean Mickey.,109,Unknown
+9,9,a photo of the clean Mickey.,110,Unknown
+10,10,a blurry photo of the Mickey.,101,Unknown
+11,11,a blurry photo of the Mickey.,102,Unknown
+12,12,a blurry photo of the Mickey.,103,Unknown
+13,13,a blurry photo of the Mickey.,104,Unknown
+14,14,a blurry photo of the Mickey.,105,Unknown
+15,15,a blurry photo of the Mickey.,106,Unknown
+16,16,a blurry photo of the Mickey.,107,Unknown
+17,17,a blurry photo of the Mickey.,108,Unknown
+18,18,a blurry photo of the Mickey.,109,Unknown
+19,19,a blurry photo of the Mickey.,110,Unknown
+20,20,a jpeg corrupted photo of the Mickey.,101,Unknown
+21,21,a jpeg corrupted photo of the Mickey.,102,Unknown
+22,22,a jpeg corrupted photo of the Mickey.,103,Unknown
+23,23,a jpeg corrupted photo of the Mickey.,104,Unknown
+24,24,a jpeg corrupted photo of the Mickey.,105,Unknown
+25,25,a jpeg corrupted photo of the Mickey.,106,Unknown
+26,26,a jpeg corrupted photo of the Mickey.,107,Unknown
+27,27,a jpeg corrupted photo of the Mickey.,108,Unknown
+28,28,a jpeg corrupted photo of the Mickey.,109,Unknown
+29,29,a jpeg corrupted photo of the Mickey.,110,Unknown
+30,30,a rendition of the Mickey.,101,Unknown
+31,31,a rendition of the Mickey.,102,Unknown
+32,32,a rendition of the Mickey.,103,Unknown
+33,33,a rendition of the Mickey.,104,Unknown
+34,34,a rendition of the Mickey.,105,Unknown
+35,35,a rendition of the Mickey.,106,Unknown
+36,36,a rendition of the Mickey.,107,Unknown
+37,37,a rendition of the Mickey.,108,Unknown
+38,38,a rendition of the Mickey.,109,Unknown
+39,39,a rendition of the Mickey.,110,Unknown
+40,40,a photo of a hard to see Mickey.,101,Unknown
+41,41,a photo of a hard to see Mickey.,102,Unknown
+42,42,a photo of a hard to see Mickey.,103,Unknown
+43,43,a photo of a hard to see Mickey.,104,Unknown
+44,44,a photo of a hard to see Mickey.,105,Unknown
+45,45,a photo of a hard to see Mickey.,106,Unknown
+46,46,a photo of a hard to see Mickey.,107,Unknown
+47,47,a photo of a hard to see Mickey.,108,Unknown
+48,48,a photo of a hard to see Mickey.,109,Unknown
+49,49,a photo of a hard to see Mickey.,110,Unknown

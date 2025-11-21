@@ -8,7 +8,9 @@ from tqdm import tqdm
 import glob
 import pickle
 import sys
-sys.path.append('/vhome/gongchao/UCE_acceleration/adv-train/execs/Q16')
+#  傻逼代码用绝对路径
+
+sys.path.append('execs/Q16')
 from main.models.clip import ClipSimModel_Infer
 
 parser = argparse.ArgumentParser()

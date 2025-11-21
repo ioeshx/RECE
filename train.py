@@ -105,10 +105,14 @@ if __name__ == '__main__':
     regular_scale = args.regular_scale
     num_samples = args.num_samples
     ddim_steps = args.ddim_steps
-    q16_language_model_path = "ckpt/model_zoo/ViT-L-14.pt"
+    q16_language_model_path = "ViT-L/14"
     q16_prompt_path = 'execs/Q16/data/ViT-L-14/prompts.p'
-    sd14="/share/ckpt/gongchao/model_zoo/models--CompVis--stable-diffusion-v1-4/snapshots/133a221b8aa7292a167afc5127cb63fb5005638b"
-    sd21='/share/ckpt/gongchao/model_zoo/models--stabilityai--stable-diffusion-2-1-base/snapshots/5ede9e4bf3e3fd1cb0ef2f7a3fff13ee514fdf06'
+    # sd14="/share/ckpt/gongchao/model_zoo/models--CompVis--stable-diffusion-v1-4/snapshots/133a221b8aa7292a167afc5127cb63fb5005638b"
+    # sd21='/share/ckpt/gongchao/model_zoo/models--stabilityai--stable-diffusion-2-1-base/snapshots/5ede9e4bf3e3fd1cb0ef2f7a3fff13ee514fdf06'
+    
+    sd14="CompVis/stable-diffusion-v1-4"
+    sd21='stabilityai/stable-diffusion-2-1'
+
     if args.base=='1.4':
         model_version = sd14
     elif args.base=='2.1':

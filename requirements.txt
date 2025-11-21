@@ -1,12 +1,14 @@
+accelerate
 clean_fid==0.1.35
 diffusers==0.20.2
+huggingface_hub<0.26.0
 embedding_reader==1.7.0
 fire==0.5.0
 fsspec==2023.10.0
 lpips==0.1.4
 matplotlib==3.6.3
 multidict==6.0.5
-numpy==2.0.1
+numpy
 omegaconf==2.3.0
 onnxruntime==1.16.2
 onnxruntime_gpu==1.15.1

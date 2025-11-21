@@ -92,8 +92,12 @@ if __name__ == '__main__':
     regular_scale = args.regular_scale
     num_samples = args.num_samples
     ddim_steps = args.ddim_steps
-    sd14="/share/ckpt/gongchao/model_zoo/models--CompVis--stable-diffusion-v1-4/snapshots/133a221b8aa7292a167afc5127cb63fb5005638b"
-    sd21='/share/ckpt/gongchao/model_zoo/models--stabilityai--stable-diffusion-2-1-base/snapshots/5ede9e4bf3e3fd1cb0ef2f7a3fff13ee514fdf06'
+
+    # sd14="/share/ckpt/gongchao/model_zoo/models--CompVis--stable-diffusion-v1-4/snapshots/133a221b8aa7292a167afc5127cb63fb5005638b"
+    # sd21='/share/ckpt/gongchao/model_zoo/models--stabilityai--stable-diffusion-2-1-base/snapshots/5ede9e4bf3e3fd1cb0ef2f7a3fff13ee514fdf06'
+
+    sd14="CompVis/stable-diffusion-v1-4"
+    sd21='stabilityai/stable-diffusion-2-1'
     if args.base=='1.4':
         model_version = sd14
     elif args.base=='2.1':
@@ -123,7 +127,11 @@ if __name__ == '__main__':
     if concepts[0] == '10artists':
         concepts = ["Asger Jorn", "Eric Fischl", "Johannes Vermeer", "Apollinary Vasnetsov", "Naoki Urasawa", "Nicolas Mignard", "John Whitcomb", "John Constable", "Warwick Globe", "Albert Marquet"]
 
-    if 'artists' in concepts[0]:
+    if concepts[0] == '3bigartist':
+        df = pd.read_csv('dataset/big_artist_prompts.csv')
+        artists = list(df.artist.unique())
+        concepts = ['Pablo Picasso','Claude Monet', 'Van Gogh']
+    elif 'artists' in concepts[0]:
         df = pd.read_csv('dataset/artists1734_prompts.csv')
         artists = list(df.artist.unique())
         number = int(concepts[0].replace('artists', ''))

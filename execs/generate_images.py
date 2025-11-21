@@ -6,7 +6,13 @@ import os
 from diffusers import LMSDiscreteScheduler, StableDiffusionPipeline, UNet2DConditionModel
 import argparse
 import sys
+current_directory = os.getcwd()
+# 将当前路径添加到 sys.path
+if current_directory not in sys.path:
+    sys.path.append(current_directory)
+print(sys.path)
 from execs import compute_nudity_rate
+# from compute_nudity_rate import compute_nudity_rate
 
 def generate_images(model, df, save_path, device='cuda:0', guidance_scale = 7.5, image_size=512, ddim_steps=50, num_samples=1, from_case=0):
         
@@ -228,9 +234,9 @@ if __name__=='__main__':
     ckpt = args.ckpt
     
     if base=='1.4':
-        dir_= '/share/ckpt/gongchao/model_zoo/models--CompVis--stable-diffusion-v1-4/snapshots/133a221b8aa7292a167afc5127cb63fb5005638b'
+        dir_= "CompVis/stable-diffusion-v1-4"
     elif base=='2.1':
-        dir_ = '/share/ckpt/gongchao/model_zoo/models--stabilityai--stable-diffusion-2-1-base/snapshots/5ede9e4bf3e3fd1cb0ef2f7a3fff13ee514fdf06'
+        dir_ = 'stabilityai/stable-diffusion-2-1'
     else:
         raise ValueError('base should be 1.4 or 2.1')
     
